@@ -219,12 +219,21 @@
 	</div>
 
 	<div class="control-group">
-		<label class="control-label">{{ _('Invert Image Rotation') }}</label>
+		<label class="control-label">{{ _('Invert Image Rotation Clockwise') }}</label>
 		<div class="controls">
 			<label class="checkbox">
 				<input type="checkbox" data-bind="checked: settings.settings.plugins.telegram.invertImgRot"  /> 
 			</label>
-			<span class="help-block"><small>Check to invert the image rotation.</small></span>
+			<span class="help-block"><small>Check to rotate the image 90 degrees clockwise.</small></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">{{ _('Rotate Image 90 degrees Counter Clockwise') }}</label>
+		<div class="controls">
+			<label class="checkbox">
+				<input type="checkbox" data-bind="checked: settings.settings.plugins.telegram.imgRotate90CCW"  /> 
+			</label>
+			<span class="help-block"><small>Check to rotate the image 90 degrees counter clockwise.</small></span>
 		</div>
 	</div>
 	<div class="control-group">
