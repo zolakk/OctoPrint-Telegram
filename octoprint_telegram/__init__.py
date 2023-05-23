@@ -1084,6 +1084,8 @@ class TelegramPlugin(
             multicam=False,
             no_mistake=False,
             invertImgRot=False,
+	    imgFlipHorizontal=False,
+	    imgFlipVertical=False,
             scale_gif=0,
             delay_img_gif=0.5,
             number_img_gif=20,
@@ -2573,9 +2575,9 @@ class TelegramPlugin(
             except Exception as e:
                 self._logger.exception("TimeOut Exception: " + str(e))
                 return None
-        flipH = self._settings.global_get(["webcam", "flipH"])
-        flipV = self._settings.global_get(["webcam", "flipV"])
-        rotate = self._settings.global_get(["webcam", "rotate90"])
+        flipH = self._settings.get_boolean(["imgFlipHorizontal"])
+        flipV = self._settings.get_boolean(["imgFlipVertical"])
+        rotate = self.settings.get_boolean(["imgFlipRotate90"]))
         self._logger.debug(
             "Image transformations [H:%s, V:%s, R:%s]", flipH, flipV, rotate
         )
