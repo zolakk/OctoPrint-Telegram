@@ -227,7 +227,24 @@
 			<span class="help-block"><small>Check to invert the image rotation.</small></span>
 		</div>
 	</div>
-
+	<div class="control-group">
+		<label class="control-label">{{ _('Flip Image Horizontally') }}</label>
+		<div class="controls">
+			<label class="checkbox">
+				<input type="checkbox" data-bind="checked: settings.settings.plugins.telegram.imgFlipHorizontal"  /> 
+			</label>
+			<span class="help-block"><small>Check to flip the image horizontally.</small></span>
+		</div>
+	</div>
+	<div class="control-group">
+		<label class="control-label">{{ _('Flip Image Vertically') }}</label>
+		<div class="controls">
+			<label class="checkbox">
+				<input type="checkbox" data-bind="checked: settings.settings.plugins.telegram.imgFlipVertical"  /> 
+			</label>
+			<span class="help-block"><small>Check to flip the image vertically.</small></span>
+		</div>
+	</div>
 	<div class="control-group">
 		<label class="control-label">{{ _('Message bot do not understand you') }}</label>
 		<div class="controls">
