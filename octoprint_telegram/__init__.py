@@ -2577,7 +2577,7 @@ class TelegramPlugin(
                 return None
         flipH = self._settings.get_boolean(["imgFlipHorizontal"])
         flipV = self._settings.get_boolean(["imgFlipVertical"])
-        rotate = self.settings.get_boolean(["imgFlipRotate90"]))
+        rotate = self.settings.get_boolean(["imgRotate90CCW"]))
         self._logger.debug(
             "Image transformations [H:%s, V:%s, R:%s]", flipH, flipV, rotate
         )
